@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="../CSS/produtos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Estoque Senai/SC | Intelbras</h1>
+    </header>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="funcionarios.html">Funcionarios</a></li>
+            <li><a href="estoque.html">Verificar Estoque</a></li>
+        </ul>
+    </nav>
+
+
+
+    <form name="registerProducts" id="registerProducts" action="../JS/produtos.js" method="POST">
+
+        <h1>Cadastro de Produtos</h1>
+
+        <label for="model">Modelo</label>
+        <input type="text" name="model" id="model">
+        </div>
+        <div>
+            <label for="serial">Serial</label>
+            <input type="text" name="serial" id="serial">
+        </div>
+        <div>
+            <label for="manufacturer">Fabricante</label>
+            <input type="text" name="manufacturer" id="manufacturer">
+        </div>
+        <div>
+            <label for="description">Descrição</label>
+            <textarea id="description"></textarea>
+        </div>
+        <div>
+            <label for="stock">Estoque</label>
+            <input type="number" name="stock" id="stock">
+        </div>
+        <div>
+            <label for="minAmount">Quantidade Min</label>
+            <input type="number" name="minAmount" id="minAmount">
+        </div>
+        <div id="resp">Produto cadastrado</div>
+        <div id="button">
+            <input id="button" type="button" value="Cadastrar" onclick="registerProduct()">
+        </div>
+        <div id="clear">
+            <input id="reset" type="reset" value="Limpar" onclick="cleanprodutc()">
+            <!--Fazer essa função -->
+        </div>
+    </form>
+    <footer>
+        <p>Desenvolvido por &copy;<strong>GrupoVoidDoor</strong></p>
+        <img src="LOGOsenai.png" alt="some text" width=120 height=60>
+    </footer>
+
+    <script src="../JS/produtos.js"></script>
+</body>
+
+</html>

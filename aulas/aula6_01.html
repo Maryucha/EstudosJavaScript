@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>AULA 6 - EVENTOS DOM</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <script src='main.js'></script>
+        <style>
+                h1{
+                color: #f5a30c;  
+            }
+            h4{
+                color: darkslategray;
+                font: normal 15pt Arial;
+            }
+            h3{
+                color: red;
+                font: normal 10pt Arial;
+            }
+            body{
+                background-color: rgb(211, 205, 205);
+                color: #050300;
+                font: normal 15pt Arial;
+            }
+        </style>
+    </head>
+    <body>
+       <h1>Somando valores:</h1>
+       <input type= "number" name= "txtn1" id= "txtn1"> +
+       <input type= "number" name= "txtn2" id= "txtn2">
+       <input type= "button" value= "SOMAR" onclick= "somar()">
+       <div id= "res">Resultado </div>
+        <script type= "text/javascript">
+            function somar(){
+                var tn2= window.document.querySelector('input#txtn1')
+                var tn2= window.document.querySelector('input#txtn2')
+                var res= window.document.getElementById('res')
+                var n1= Number(tn1.value)
+                var n2= Number(tn2.value)
+                var soma= n1+n2
+                res.innerHTML= `A soma de ${n1} + ${n2} é ${soma}`         
+            }
+        </script>   
+    </body>
+</html>

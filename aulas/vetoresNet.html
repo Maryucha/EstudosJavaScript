@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ATIVIDADE DA NET</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+       <script type="text/javascript">
+        var frutas=['Maçã','Banana','Limão','Guaraná','Melancia']//vetores
+
+        var adicionar=frutas.push('Laranja')//adiciona ao vetor
+
+        console.log(frutas.length)//conta no console
+
+        var primeiro=frutas[0]//para nomear uma variavel de vetor
+
+        var ultimo=frutas[frutas.length-1]//ler último item do vetor
+
+        document.write("\n"+primeiro)//printar no body
+
+        document.write("\n"+ultimo)//printar no body
+
+        frutas.forEach(function(item,indice,arrey){//mostrar no console cada variavel
+            console.log(item,indice)
+        })            
+        var ultimo=frutas.pop()//remove o ultimo item
+
+
+    </script>
+    
+</body>
+</html>
